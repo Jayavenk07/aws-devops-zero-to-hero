@@ -2,5 +2,5 @@
 set -e
 
 # Stop the running container (if any)
-c='sudo docker ps | awk -F" " '{Print $1}''
+c='docker ps -q'
 docker rm -f $c
